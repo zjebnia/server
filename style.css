@@ -1,0 +1,63 @@
+@keyframes wobble {
+    0% {
+      transform: none;
+    }
+    15% {
+      transform: translateX(-5px) rotate(-5deg);
+    }
+    30% {
+      transform: translateX(5px) rotate(5deg);
+    }
+    45% {
+      transform: translateX(-5px) rotate(0deg);
+    }
+    60% {
+      transform: translateX(5px) rotate(0deg);
+    }
+    75% {
+      transform: translateX(-5px) rotate(5deg);
+    }
+    100% {
+      transform: none;
+    }
+}
+  
+  .wobble {
+    text-align: center;
+    text-decoration-color: blueviolet;
+    display: inline-block;
+    animation-name: wobble;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  .text-container {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .invisible-text {
+    color: rgb(0, 0, 0);
+  }
+
+  .rainbow-text {
+    background: linear-gradient(to right, 
+      red, orange, yellow, green, blue, indigo, violet
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 5s linear infinite;
+  }
+  
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
