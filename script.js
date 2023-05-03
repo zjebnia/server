@@ -1,7 +1,7 @@
 document.getElementById("copy-link").addEventListener("click", function() {
-    const textToCopy = "This is the text to be copied"; // Replace this with the text you want to copy
+    const textToCopy = "zjebnia.ddns.net"; // Replace this with the text you want to copy
     const newText = document.createElement("p");
-    newText.innerText = "ZKOPIOWANe!";
+    newText.innerText = "ZKOPIOWANE!";
     newText.style.color = "lime";
     newText.style.textAlign = "center";
     newText.id = "copied-text";
